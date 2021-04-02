@@ -1,7 +1,10 @@
 var div1=document.getElementById("templet"), 
     key="2b6d19f45d11ac33bd35e0b98c6365b0",
     div2=document.getElementById("description"),
-    div3=document.getElementById("Country");
+    div3=document.getElementById("Country"),
+    input1=document.getElementById("input1"),
+    input2=document.getElementById("input2");
+    
 
 const cliven=270;
 function temp(){
