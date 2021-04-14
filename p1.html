@@ -2,22 +2,47 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2"
+    />
+    <link
+      rel="stylesheet"
+      href="http://api.openweathermap.org/data/2.5/weather?q=London"
+    />
   </head>
   <body>
     <div class="contaner">
-      <div class="heder"><p>weather</p></div>
-      <input id="input1" type="text" placeholder="Country" onkeyup="temp()" />
-      <input id="input2" type="text" placeholder="city" onkeyup="temp()" />
-
-      <div class="imge"></div>
-      <div class="templeter">
-        <p><span id="templet">0</span> ْc</p>
+      <div class="header"><p>weather</p></div>
+      <input
+        id="input1"
+        type="text"
+        placeholder=" please write country"
+        onkeyup="temp()"
+      />
+      <input
+        id="input2"
+        type="text"
+        placeholder="please write city"
+        onkeyup="temp()"
+      />
+      <div class="templeter-country">
+        <p id="Country">Country</p>
+      </div>
+      <div class="templeter-date">
+        <p class="date" id="date">date</p>
       </div>
       <div class="templeter-description">
-        <p id="description">-</p>
+        <p id="description">description</p>
       </div>
-      <div class="templeter-country">
-        <p id="Country">-</p>
+      <div class="imge">
+        <img id="img" src="http://openweathermap.org/img/wn/03n@2x.png" />
+      </div>
+      <div class="templeter">
+        <p><span id="templet">templeter</span></p>
+      </div>
+      <div class="templetermax">
+        <p><span id="templetmax">min-max</span></p>
       </div>
     </div>
 
